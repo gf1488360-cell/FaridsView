@@ -1,0 +1,202 @@
+/* =============================== */
+/* FARIDSVIEW - NATIONAL TRANSFORMATION */
+/* =============================== */
+
+/* Reset & Base Variables - GREEN THEME */
+:root {
+    /* Professional Green Color Palette */
+    --primary-dark: #1a5f1a;
+    --primary-color: #2d7a2d;
+    --secondary-color: #2b6c2b;
+    --accent-color: #318231;
+    --highlight-color: #429942;
+    
+    /* Neutral Colors */
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --text-light: #718096;
+    --border-color: #e2e8f0;
+    --light-bg: #f7fafc;
+    --white: #ffffff;
+    
+    /* Green Gradients */
+    --gradient-green: linear-gradient(135deg, #429942 0%, #318231 100%);
+    --gradient-dark: linear-gradient(135deg, #2d7a2d 0%, #1a5f1a 100%);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4rem;
+    
+    /* Typography */
+    --font-primary: 'Source Sans Pro', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Update all gradient references to green */
+.text-gradient {
+    background: var(--gradient-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.announcement-bar {
+    background: var(--gradient-dark);
+}
+
+.logo-mark {
+    background: var(--gradient-green);
+}
+
+.nav-cta {
+    background: var(--gradient-green);
+}
+
+.btn-primary {
+    background: var(--gradient-green);
+}
+
+.chart-bar {
+    background: var(--gradient-green);
+}
+
+.element i {
+    color: var(--secondary-color);
+}
+
+.approach-card::before {
+    background: var(--gradient-green);
+}
+
+.approach-card.vision::before { background: linear-gradient(90deg, #429942, #318231); }
+.approach-card.strategy::before { background: linear-gradient(90deg, #318231, #2b6c2b); }
+.approach-card.execution::before { background: linear-gradient(90deg, #2b6c2b, #1a5f1a); }
+
+.approach-icon {
+    background: var(--gradient-green);
+}
+
+.contact-icon {
+    background: var(--gradient-green);
+}
+
+.footer .logo-mark {
+    background: var(--gradient-green);
+}
+
+/* Article Link Style */
+.article-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-base);
+}
+
+.article-link:hover {
+    color: var(--primary-dark);
+    transform: translateX(5px);
+}
+
+/* Framework Grid */
+.framework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.framework-pillar {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: var(--transition-base);
+    border-top: 4px solid var(--secondary-color);
+}
+
+.framework-pillar:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pillar-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.framework-pillar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.framework-pillar p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Form Select */
+.form-group select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    background: var(--white);
+    transition: var(--transition-base);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%232d7a2d' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(45, 122, 45, 0.1);
+}
+
+/* Updated Strategy Elements Colors */
+.element.education i { color: #2b6c2b; }
+.element.economy i { color: #318231; }
+.element.industry i { color: #1a5f1a; }
+.element.governance i { color: #429942; }
+
+/* Skills hover effect */
+.skill:hover {
+    background: var(--gradient-green);
+    color: var(--white);
+}
+
+/* Keep existing responsive design */
+/* All other styles remain the same as original */
