@@ -200,3 +200,152 @@
 
 /* Keep existing responsive design */
 /* All other styles remain the same as original */
+/* Fix the text gradient to work properly with green theme */
+.text-gradient {
+    background: var(--gradient-green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Ensure proper display of hero elements */
+.hero {
+    padding: 6rem 0 4rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    max-width: 90%;
+    line-height: 1.6;
+}
+
+/* Fix for gradient display in different browsers */
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+    .text-gradient {
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* Fallback for browsers that don't support text gradients */
+.no-cssgradients .text-gradient {
+    color: var(--secondary-color);
+}
+
+/* Ensure proper contrast */
+.hero-badge {
+    display: inline-block;
+    background: rgba(66, 153, 66, 0.1); /* Green background with opacity */
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(66, 153, 66, 0.2);
+}
+
+/* Fix section title spacing */
+.section-intro {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.lead-text {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+}
+
+/* Fix philosophy points layout */
+.philosophy-points {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.point {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 12px;
+    transition: var(--transition-base);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.point:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.point-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    opacity: 0.3;
+    min-width: 60px;
+}
+
+.point-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.point-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for text */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .philosophy-points {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .point {
+        padding: 1.5rem;
+    }
+}
