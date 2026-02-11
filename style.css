@@ -1419,3 +1419,68 @@ body {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
 }
+
+
+
+
+/* Add these to your existing style.css */
+
+/* Article page responsive adjustments */
+@media (max-width: 992px) {
+    .article-title {
+        font-size: 2.5rem;
+    }
+    
+    .article-content {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .article-header {
+        padding: 6rem 0 3rem;
+    }
+    
+    .article-title {
+        font-size: 2rem;
+    }
+    
+    .article-text {
+        font-size: 1rem;
+    }
+    
+    .highlight-box {
+        padding: 1.5rem;
+    }
+    
+    .highlight-box p {
+        font-size: 1.125rem;
+    }
+    
+    .graph-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .key-points {
+        padding: 2rem;
+    }
+    
+    .conclusion-box {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-title {
+        font-size: 1.75rem;
+    }
+    
+    .article-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    .article-meta {
+        font-size: 0.875rem;
+    }
+}
