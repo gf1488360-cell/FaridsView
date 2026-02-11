@@ -1395,3 +1395,27 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 500;
 }
+
+
+
+/* Update insights grid for single card */
+.insights-grid {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.insight-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-base);
+    width: 100%;
+}
+
+.insight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
