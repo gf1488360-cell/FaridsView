@@ -1489,3 +1489,62 @@ body {
     }
 }
 
+
+/* Contact Section Responsive Fixes */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-form-card {
+        padding: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-item {
+        padding: 1rem 0;
+    }
+    
+    .contact-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-details {
+        margin-top: 2rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+        padding: 1.25rem 0;
+    }
+    
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .contact-text h4 {
+        margin-bottom: 0.5rem;
+    }
+}
