@@ -312,78 +312,145 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="section-intro">
-                        <span class="section-label">Connect & Collaborate</span>
-                        <h2 class="section-title">Join the Education Transformation Dialogue</h2>
-                        <p class="section-subtitle">Share insights, discuss strategies, or contribute to Pakistan's education reform discourse</p>
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="section-intro">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Start an Education Transformation Dialogue</h2>
+                    <p class="section-subtitle">Let's discuss how evidence-based strategies can transform Pakistan's education systems</p>
+                </div>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>gf1488360@gmail.com</p>
+                        </div>
                     </div>
                     
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p>gf1488360@gmail.com</p>
-                            </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Phone</h4>
-                                <p>+92 308 6007904</p>
-                            </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+92 308 6007904</p>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Lahore, Pakistan</p>
-                            </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Website</h4>
-                                <p>FaridsView.com</p>
-                            </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Lahore, Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Website</h4>
+                            <p>FaridsView.com</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="contact-form-wrapper">
-                    <div class="contact-form-card">
-                        <h3>Share Your Education Insights</h3>
-                        <form id="contactForm" action="https://formspree.io/f/mnjvrrvr" method="POST">
-                            <input type="hidden" name="_subject" value="New Education Insight - FaridsView.com">
-                            <input type="hidden" name="_format" value="plain">
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Your Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Your Email *</label>
-                                    <input type="email" id="email" name="_replyto" required>
-                                </div>
-                            </div>
-                            
+            </div>
+            
+            <div class="contact-form-wrapper">
+                <div class="contact-form-card">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mnjvrrvr" method="POST">
+                        <input type="hidden" name="_subject" value="New Education Inquiry - FaridsView.com">
+                        <input type="hidden" name="_format" value="plain">
+                        
+                        <div class="form-row">
                             <div class="form-group">
-                                <label for="subject">Education Topic *</label>
-                                <select 
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email *</label>
+                                <input type="email" id="email" name="_replyto" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" placeholder="e.g., Curriculum Consultation, Article Collaboration" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-mark">F.V</div>
+                    <div class="logo-text">
+                        <span class="logo-title">Ghulam Farid</span>
+                        <span class="logo-title">Education Systems Strategist</span>
+                    </div>
+                </div>
+                <p class="footer-tagline">Where education strategy meets progress</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navigation</h4>
+                    <a href="#home">Home</a>
+                    <a href="#approach">Approach</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#insights">Articles</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="link-group">
+                    <h4>Focus Areas</h4>
+                    <span>Curriculum Design</span>
+                    <span>Teacher Development</span>
+                    <span>EdTech Integration</span>
+                    <span>Education Policy</span>
+                </div>
+            </div>
+            
+            <div class="footer-cta">
+                <h4>Ready to transform education systems?</h4>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Start a Project</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ghulam Farid. All rights reserved.</p>
+            <p class="footer-site">FaridsView.com</p>
+        </div>
+    </div>
+</footer>
