@@ -416,3 +416,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+// Add this to your existing script.js in the initNavigation() function
+
+function initNavigation() {
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const body = document.body;
+    
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            this.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            body.classList.toggle('menu-open'); // Add this line
+        });
+        
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                body.classList.remove('menu-open'); // Add this line
+            });
+        });
+        
+        // Rest of your navigation code...
+    }
+}
